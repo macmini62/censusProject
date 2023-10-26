@@ -310,5 +310,20 @@ p{
     width: 100%;
     height: 10%;
     border: 1px solid blue;
+
+}
+
+.inputLayout {
+    width: 100%;
+    height: 90%;
+    position: relative;
+    top: 10%;
+    border: 1px solid red;
+}
+
+.userDetails{
+    border: 1px solid green;
+    margin: 0;
     
+
 }
