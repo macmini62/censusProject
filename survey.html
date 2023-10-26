@@ -7,16 +7,43 @@
     <title>Census_Survey_Page</title>
 </head>
 <body class="surveyBody">
-    <footer class="surveyFooter"></footer>
-    <div class="menuCheckbox">
-        <input type="checkbox" id="menuCheckbox">
-        <label for="menuCheckbox" id="menuSpan">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-    </div>
+    <header class="surveyHeader"></header>
+    <input type="checkbox" id="openMenu" class="hamburgerCheckbox">
+        <div class="hamburgerIcon">
+            <label for="openMenu" id="hamburgerLabel">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>    
+        </div>
+        <div class="homeMenu">
+            <h3>MENU</h3>
+            <nav>
+                <ul id="homeMenu">
+                    <li>
+                        <a href="info.html" id="detailsLink">
+                            My Details
+                        </a>
+                    </li>
+                    <li>
+                        <a href="survey.html" id="surveryLink">
+                            Survey
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html" id="aboutLink">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="login.html" id="loginlink">
+                            Log Out
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     <div class="inputLayout">
         <ol class="userDetails">
             <li class="userCitizenship">

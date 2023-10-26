@@ -298,32 +298,39 @@ p{
 
 
 .surveyBody {
+    overflow: scroll;
     width: 100vw;
     height: 100vh;
     position: relative;
-    display: flex;
-    flex-direction: column;
 }
 
-.surveyFooter {
+.surveyHeader {
     position: fixed;
     width: 100%;
-    height: 10%;
+    height: 5%;
     border: 1px solid blue;
 
 }
 
+#hamburgerCheckbox{
+    top: 5px;
+    left: 5px;
+}
+.hamburgerIcon{
+    top: 5px;
+    left: 5px;
+}
+
 .inputLayout {
     width: 100%;
-    height: 90%;
+    height: 100%;
     position: relative;
-    top: 10%;
+    top: 5%;
     border: 1px solid red;
 }
 
 .userDetails{
     border: 1px solid green;
     margin: 0;
-    
-
+    height: 100%;
 }
