@@ -5,15 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Census_Survey_Page</title>
 </head>
-<body>
+<body class="surveyBody">
     <footer class="surveyFooter"></footer>
     <div class="inputLayout">
-        <ul class="userDetails">
-            <li class="userCitizenship">Citizenship</li>
-            <li class="userResidence">Residence</li>
-            <li class="userMaritualStatus">Maritual Status</li>
-            <li class="userEmploymentStatus">Employment Status</li>
-        </ul>
+        <ol class="userDetails">
+            <li class="userCitizenship">
+                Citizenship
+                <div>
+                    <input type="radio" class="citizenBirth">
+                    Birth
+                    <div>
+                        <ol class="birthStatus">
+                            <li>
+                                County of birth.
+                                <input type="text">
+                            </li>
+                            <li>
+                                Date of birth
+                                <input type="date">
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div>
+                    <input type="radio" class="citizenRegistration">
+                    Registration
+                    <div>
+                        <ol class="registrationStatus">
+                            <li>
+                                County of Registration
+                                <input type="text">
+                            </li>
+                            <li>
+                                Date of Registration
+                                <input type="date">
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </li>
+            <li class="userResidence">
+                Residence
+                <div>
+                    <ol class="residencialStatus">
+                        <li>
+                            County of Residence
+                            <input type="text" id="countyResidence">
+                        </li>
+                        <li>
+                            Sub-county of Residence
+                            <input type="text" id="subcountyResidence">
+                        </li>
+                        <li>
+                            Village of Residence
+                            <input type="text" id="villageResidence">
+                        </li>
+                    </ol>
+                </div>
+            </li>
+            <li class="userMaritualStatus">
+                Maritual Status
+                <div>
+                    <input type="radio" class="marriade">
+                    Marriade
+                    <div>
+                        <ol maritualStatus>
+                            <li>
+                                Name of spouse
+                                <input type="text">
+                            </li>
+                            <li>
+                                Identification Number(ID) of spouse
+                                <input type="text">
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div>
+                    <input type="radio" class="notMarrriade">
+                    Not-Marriade
+                </div>
+            </li>
+            <li class="userEmploymentStatus">
+                Employment Status
+                <div>
+                    <input type="radio" class="employed">
+                    Employed
+                    <div>
+                        <ol class="employnentStatus">
+                            <li>
+                                Occupation
+                                <input type="text">
+                            </li>
+                            <li>
+                                Company
+                                <input type="text">
+                            </li>
+                            <li>
+                                KRA pin
+                                <input type="text">
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div>
+                    <input type="radio" class="unemployed">
+                    Unemployed
+                    <div>
+                        KRA pin
+                        <input type="text">
+                    </div>
+                </div>
+            </li>
+        </ol>
     </div>
 </body>
 </html>
