@@ -1,0 +1,295 @@
+/* style for the login page. */
+/* !!!remember to adjust the pages viewpoint!!! */
+html{
+    box-sizing: border-box;
+}
+body{
+    box-sizing: inherit !important;
+    margin: 0;
+}
+
+.censusBody{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2%;
+    background-color:#dbdbdb;
+}
+
+img{
+    height: 15%;
+    width: 30%;
+}
+
+.loginDetails{
+    width: 40%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10%;
+    background-color: #35662c;
+    border-radius: 20px;
+    box-shadow: 1px 1px 40px -5px rgba(173,176,40,0.51);
+
+}
+#inputIDNumber, #inputFullName{
+    height: 20%;
+    width: 90%;
+    border: 0;
+    padding-left: 5%;
+    border-radius: 30px;
+    background-color: #e3e3e3;
+    font-size: 18px;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+#inputIDNumber:focus, #inputFullName:focus{
+    outline: 5px solid #b01c28;
+}
+
+.loginButton{
+    width: 40%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #35662c;
+    border-radius: 20px;
+    box-shadow: 1px 1px 40px -5px rgba(173,176,40,0.51);
+}
+#loginButton{
+    width: 90%;
+    height: 50%;
+    border: 0;
+    border-radius: 50px;
+    background-color: #15161c;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#loginButton:hover{
+    cursor: pointer;
+}
+#loginButton:active{
+    background-color: #e3e3e3;
+    color: #15161c;
+    scale: 1.05;
+}
+/* end of login page style */
+
+
+/* home page styling. */
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    margin: 0;
+}
+.homeBody{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 80vw;
+    height: 90vh;
+    background-color:#dadbe6;
+    color: #000;
+}
+
+.homeHeader{
+    position: fixed;
+    z-index: 1;
+    width: 80%;
+    height: 50px;
+    background-color: #267365;
+}
+
+.hamburgerCheckbox{
+    position: absolute;
+    width: 10%;
+    height: 50px;
+    top: 0;
+    z-index: 4;
+    margin: 0;
+    border: 0;
+    opacity: 0;
+}
+
+.hamburgerIcon{
+    position: fixed;
+    left: 11%;
+    width: 50px;
+    z-index: 3;
+}
+.hamburgerIcon span{
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #000;
+    margin: 5px 0px 5px 0px ;
+    transition: 1s ease-in-out;
+    transform: none;
+}
+.hamburgerCheckbox:hover{
+    cursor: pointer;
+}
+.homeMenu{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1;
+    height: 200px;
+    width: 210px;
+    transform: translateY(-100vw);
+    transform-origin: (0, 0);
+    transition: 1s ease-in-out;
+    background-color: #F27D16;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+}
+.homeMenu h3{
+    align-self: center;
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+    margin: 0;
+    font-size: 20px;
+    color: #044040;
+    background-color: #F2BF27;
+    border-top-right-radius: 20px;
+}
+#homeMenu{
+    text-align: center;
+    height: 120px;
+    padding-left: 0;
+    padding-top: 10px;
+    margin: 0;
+}
+#homeMenu li{
+    list-style-type: none;
+    padding-top: 10px;
+}
+#homeMenu a{
+    text-decoration: none;
+    color: #F2F2F2;
+    font-size: 18px;
+}
+#homeMenu a:hover{
+    cursor: pointer;
+    background-color: #F2BF27;
+    color: #044040;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+}
+/* subsequent-sibling combinator(~) */
+#openMenu:checked ~ .hamburgerIcon span:nth-of-type(1){
+    opacity: 0;
+}
+#openMenu:checked ~ .hamburgerIcon span:nth-of-type(2){
+    transform: translate(0% ,175%) rotate(-45deg);
+    background-color: #fff;
+}
+#openMenu:checked ~ .hamburgerIcon span:nth-of-type(3){
+    transform: rotate(45deg);
+    background-color: #fff;
+}
+#openMenu:checked ~ .hamburgerIcon span:nth-of-type(4){
+    opacity: 0;
+}
+#openMenu:checked ~ .homeMenu{
+    transform: translateX(0vw);
+}
+#openMenu:checked ~ .homeContent{
+    filter: blur(2px);
+    transition: 1s ease-in-out;
+}
+
+.homeContent{
+    position: relative;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 85%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#homeTitle{
+    margin: 0;
+    text-align: center;
+    font-weight: 700;
+}
+#topImage{
+    width: 100%;
+    height: 30%;
+}
+#topImage img{
+    width: 100%;
+    height: 100%;
+}
+
+#topHomeDetails p{
+    text-align: center;
+    font-weight: 400;
+}
+
+.detailedInfoPanels{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 60%;
+    background-color: #F27D16;
+    border-radius: 20px;
+}
+#leftPanel{
+    position: absolute;
+    width: 55%;
+    height: 50%;
+    top: 5%;
+    left: 5%;
+    background-color: #4d5beb;
+}
+#leftBottomPanel{
+    position: absolute;
+    align-self: flex-end;
+    width: 55%;
+    height: 30%;
+    right: 40%;
+    bottom: 5%;
+    background-color: #e3de49;
+    text-align: center;
+}
+#rightPanel{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 30%;
+    height: 90%;
+    background-color: #53e349;
+}
+
+#bottomHomeDetails p{
+    margin: 0;
+}
+
+#rightPanel, #leftPanel, #leftBottomPanel{
+    border-radius: 10px;
+}
+
+.homeFooter{
+    position: relative;
+    top: 10px;
+    align-self: center;
+    text-decoration: none;
+}
+
+/* end of home page styling */
