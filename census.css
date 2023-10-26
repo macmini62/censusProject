@@ -334,3 +334,9 @@ p{
     margin: 0;
     height: 100%;
 }
+
+.userCitizenship{
+    display: flex;
+    position: relative;
+    
+}
