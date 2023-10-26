@@ -338,5 +338,41 @@ p{
 .userCitizenship{
     display: flex;
     position: relative;
-    
+    border: 1px solid green;
+}
+
+.citizenBirth{
+    border: 1px solid blue;
+}
+
+.citizenRegistration{
+    border: 1px solid yellow;
+}
+
+.userResidence{
+    border: 1px solid purple;
+}
+
+.userMaritualStatus{
+    border: 1px solid blue;
+}
+
+.userMarriade{
+    border: 1px solid brown;
+}
+
+.userNotMarriade{
+    border: 1px solid yellow;
+}
+
+.userEmploymentStatus{
+    border: 1px solid green;
+}
+
+.userEmployed{
+    border: 1px solid pink;
+}
+
+.userUnemployed{
+    border: 1px solid red;
 }
