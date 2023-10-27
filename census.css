@@ -299,14 +299,14 @@ p{
 
 .surveyBody {
     overflow: scroll;
-    width: 100vw;
+    width: 90vw;
     height: 100vh;
     position: relative;
 }
 
 .surveyHeader {
     position: fixed;
-    width: 100%;
+    width: 90vw;
     height: 5%;
     border: 1px solid blue;
 
@@ -330,6 +330,9 @@ p{
 }
 
 .userDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: 1px solid green;
     margin: 0;
     height: 100%;
@@ -338,7 +341,7 @@ p{
 .userCitizenship{
     position: relative;
     border: 1px solid green;
-    width: 100%;
+    width: 95%;
     height: 25%;
 }
 
@@ -356,46 +359,77 @@ p{
 
 .citizenBirth{
     position: absolute;
-    left: 110px;
-    bottom: 20px;
+    top: 20%;
+    left: 10%;
     border: 1px solid blue;
-    width: 40%;
+    width: 35%;
     height: 75%;
 }
 
 .citizenRegistration{
     position: absolute;
-    right: 30px;
-    bottom: 20px;
+    top: 20%;
+    left: 55%;
     border: 1px solid yellow;
-    width: 40%;
+    width: 35%;
     height: 75%;
+}
+.citizenBirth ol, .citizenRegistration ol{
+    padding: 20px 0 0 30px;
 }
 
 .userResidence{
     border: 1px solid purple;
+    width: 95%;
+    height: 15%;
 }
 
 .userMaritualStatus{
     border: 1px solid blue;
+    width: 95%;
+    height: 25%;
+    position: relative;
 }
 
 .userMarriade{
     border: 1px solid brown;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    height: 75%;
+    width: 35%;
 }
 
 .userNotMarriade{
     border: 1px solid yellow;
+    position: absolute;
+    top: 20%;
+    left: 55%;
+    width: 35%;
+    height: 40%;    
 }
 
 .userEmploymentStatus{
     border: 1px solid green;
+    position: relative;
+    width: 95%;
+    height: 25%;
 }
 
 .userEmployed{
     border: 1px solid pink;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 35%;
+    height: 75%;
 }
 
 .userUnemployed{
     border: 1px solid red;
+    position: absolute;
+    top: 20%;
+    left: 55%;
+    width: 35%;
+    height: 75%;
 }
