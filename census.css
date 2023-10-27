@@ -298,18 +298,23 @@ p{
 
 
 .surveyBody {
-    overflow: scroll;
-    width: 90vw;
+    width: 100vw;
     height: 100vh;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .surveyHeader {
     position: fixed;
-    width: 90vw;
+    width: 100vw;
     height: 5%;
     border: 1px solid blue;
+    z-index: 3;
+}
 
+.homeMenu{
+    left: 5px;
 }
 
 #hamburgerCheckbox{
@@ -322,7 +327,7 @@ p{
 }
 
 .inputLayout {
-    width: 100%;
+    width: 90%;
     height: 100%;
     position: relative;
     top: 5%;
@@ -348,12 +353,12 @@ p{
 #selectBirth {
     position: absolute;
     left: 10%;
-    top: 20px;
+    top: 30px;
 }
 
 #selectRegistration{
     position: absolute;
-    top: 20px;
+    top: 30px;
     left: 55%;
 }
 
@@ -374,7 +379,7 @@ p{
     width: 35%;
     height: 75%;
 }
-.citizenBirth ol, .citizenRegistration ol{
+.citizenBirth ol, .citizenRegistration ol, .maritualStatus ol, .userEmployed ol{
     padding: 20px 0 0 30px;
 }
 
@@ -389,6 +394,17 @@ p{
     width: 95%;
     height: 25%;
     position: relative;
+}
+
+#selectMarriade{
+    position: absolute;
+    top: 30px;
+    left: 10%;
+}
+#selectNotMarriade{
+    position: absolute;
+    top: 30px;
+    left: 55%;
 }
 
 .userMarriade{
@@ -414,6 +430,17 @@ p{
     position: relative;
     width: 95%;
     height: 25%;
+}
+
+#selectEmployed{
+    position: absolute;
+    top: 30px;
+    left: 10%;
+}
+#selectUnemployed{
+    position: absolute;
+    top: 30px;
+    left: 55%;
 }
 
 .userEmployed{
