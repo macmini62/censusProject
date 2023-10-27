@@ -355,11 +355,17 @@ p{
     left: 10%;
     top: 30px;
 }
+#selectBirth input:hover{
+    cursor: pointer;
+}
 
 #selectRegistration{
     position: absolute;
     top: 30px;
     left: 55%;
+}
+#selectRegistration input:hover{
+    cursor: pointer;
 }
 
 .citizenBirth{
